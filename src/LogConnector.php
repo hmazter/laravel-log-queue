@@ -1,4 +1,10 @@
 <?php
+/**
+ * Laravel Log Queue
+ *
+ * @author    Kristoffer Högberg <krihog@gmail.com>
+ * @link      https://github.com/hmazter/laravel-log-queue
+ */
 
 namespace Hmazter\LaravelLogQueue;
 
