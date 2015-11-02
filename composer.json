@@ -1,0 +1,23 @@
+{
+  "name": "hmazter/laravel-log-queue",
+  "description": "Laravel 5 package to push Queued jobs to the log",
+  "keywords": ["laravel5"],
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kristoffer Högberg",
+      "email": "krihog@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/queue": "5.0.x|5.1.x",
+    "illuminate/support": "5.0.x|5.1.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hmazter\\LaravelLogQueue\\": "src"
+    }
+  }
+}
