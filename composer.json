@@ -12,8 +12,8 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "illuminate/queue": "5.0.x|5.1.x",
-    "illuminate/support": "5.0.x|5.1.x"
+    "illuminate/queue": "5.*",
+    "illuminate/support": "5.*"
   },
   "autoload": {
     "psr-4": {
