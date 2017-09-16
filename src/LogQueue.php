@@ -24,7 +24,7 @@ class LogQueue extends Queue implements QueueContract
      */
     public function push($job, $data = '', $queue = null)
     {
-        Log::debug($this->createPayload($job, $data, $queue));
+        Log::debug($this->createPayload($job, $data));
     }
 
     /**
@@ -51,7 +51,7 @@ class LogQueue extends Queue implements QueueContract
      */
     public function later($delay, $job, $data = '', $queue = null)
     {
-        Log::debug($this->createPayload($job, $data, $queue));
+        Log::debug($this->createPayload($job, $data));
     }
 
     /**
@@ -63,5 +63,16 @@ class LogQueue extends Queue implements QueueContract
     public function pop($queue = null)
     {
         //
+    }
+
+    /**
+     * Get the size of the queue.
+     *
+     * @param  string $queue
+     * @return int
+     */
+    public function size($queue = null)
+    {
+        return 0;
     }
 }

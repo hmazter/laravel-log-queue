@@ -19,5 +19,12 @@
     "psr-4": {
       "Hmazter\\LaravelLogQueue\\": "src"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hmazter\\LaravelLogQueue\\LogQueueServiceProvider"
+      ]
+    }
   }
 }
