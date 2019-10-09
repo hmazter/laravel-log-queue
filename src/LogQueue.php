@@ -10,7 +10,7 @@ namespace Hmazter\LaravelLogQueue;
 
 use Illuminate\Contracts\Queue\Queue as QueueContract;
 use Illuminate\Queue\Queue;
-use Log;
+use Illuminate\Support\Facades\Log;
 
 class LogQueue extends Queue implements QueueContract
 {
