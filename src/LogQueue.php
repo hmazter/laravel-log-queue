@@ -25,6 +25,8 @@ class LogQueue extends Queue implements QueueContract
     public function push($job, $data = '', $queue = null)
     {
         Log::debug($this->createPayload($job, $data));
+
+        return null;
     }
 
     /**
@@ -38,6 +40,8 @@ class LogQueue extends Queue implements QueueContract
     public function pushRaw($payload, $queue = null, array $options = [])
     {
         Log::debug($payload);
+
+        return null;
     }
 
     /**
@@ -52,6 +56,8 @@ class LogQueue extends Queue implements QueueContract
     public function later($delay, $job, $data = '', $queue = null)
     {
         Log::debug($this->createPayload($job, $data));
+
+        return null;
     }
 
     /**
@@ -62,7 +68,7 @@ class LogQueue extends Queue implements QueueContract
      */
     public function pop($queue = null)
     {
-        //
+        return null;
     }
 
     /**
